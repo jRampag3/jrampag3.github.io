@@ -15,7 +15,13 @@
 <body>
     <center>
         <div id="twitch-embed-wrapper">
-            <div id="twitch-embed"></div>
+            <div id="jrampag3-embed"></div>
+        </div>
+        <div id="twitch-embed-wrapper">
+            <div id="beastgriff-embed"></div>
+        </div>
+        <div id="twitch-embed-wrapper">
+            <div id="unwritten-embed"></div>
         </div>
     </center>
 </body>
@@ -26,9 +32,21 @@
     crossorigin="anonymous"></script>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
-    new Twitch.Embed("twitch-embed", {
+    new Twitch.Embed("jrampag3-embed", {
         width: 1000,
         height: 550,
         channel: "jrampag3"
+    });
+
+    new Twitch.Embed("beastgriff-embed", {
+        width: 1000,
+        height: 550,
+        channel: "iambeastgriff"
+    });
+
+    new Twitch.Embed("unwritten-embed", {
+        width: 1000,
+        height: 550,
+        channel: "unwrittenk"
     });
 </script>

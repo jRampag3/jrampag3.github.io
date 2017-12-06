@@ -1,12 +1,19 @@
 body {
     background-color: #5C5C5C !important;
-	font-size: 14px !important;
+    font-size: 14px !important;
 }
 
-#twitch-embed-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(50%);
+.divSquare {
+    display: block;
+    width: 30%;
+    height: 30%;
+    margin-left: 100px;
+    margin-right: 100px;
+    float: left;
+}
+
+.two {
+    right: 0;
 }
 
 .flexbox-container {
@@ -106,8 +113,8 @@ body {
     padding-top: 5px;
     display: block;
     color: rgba(29, 59, 69, 0.5);
-	text-decoration: none;
-	font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .circle-container a:hover i {

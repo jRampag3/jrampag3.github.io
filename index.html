@@ -24,6 +24,9 @@
         <div class="divSquare">
             <div id="unwritten-embed"></div>
         </div>
+        <div class="divSquare">
+                <div id="getnacety-embed"></div>
+            </div>
     </div>
 </body>
 <script src="js/headroom.js" /></script>
@@ -49,5 +52,11 @@
         width: 500,
         height:500,
         channel: "unwrittenk",
+    });
+
+    new Twitch.Embed("getnacety-embed", {
+        width: 500,
+        height:500,
+        channel: "getnacety",
     });
 </script>

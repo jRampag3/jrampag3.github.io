@@ -12,9 +12,9 @@
 
 <body>
 
-    <div class="well sidebar-nav sidebar-nav-fixed">
+    <div class="well sidebar-nav sidebar-nav-fixed col-lg-2">
         <div class="logo">
-            <img src="./img/jr3.png" />
+            <img src="./img/jr3.png" width="300" height="3000"/>
         </div>
         <ul>
             <li>
@@ -23,6 +23,9 @@
 
             <li>
                 <a class="about" href="#about">About me</a>
+            </li>
+            <li>
+                <a class="about" href="https://strexm.tv/user/jrampag3" target="_blank">Donations</a>
             </li>
         </ul>
         <div class="social">
@@ -34,7 +37,7 @@
             </a>
         </div>
     </div>
-    <div class="body">
+    <div class="body col-lg-11">
         <div id="jrampag3-embed"></div>
     </div>
 </body>
@@ -46,8 +49,8 @@
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
     new Twitch.Embed("jrampag3-embed", {
-        width: 1000,
-        height: 600,
+        width: '100%',
+        height: 500,
         channel: "jrampag3",
     });
 </script>

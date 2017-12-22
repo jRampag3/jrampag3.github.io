@@ -7,25 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body>
-    <div id="container">
-        <div class="divSquare">
+
+    <div class="well sidebar-nav sidebar-nav-fixed">
+        <div class="logo">
+            <img src="./img/jr3.png" />
+        </div>
+        <ul>
+            <li>
+                <a class="home" href="#home">Home</a>
+            </li>
+
+            <li>
+                <a class="about" href="#about">About me</a>
+            </li>
+        </ul>
+        <div class="social">
+            <a href="#">
+                <img src="img/facebook.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/twitter.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="body">
+        <div class="divSquare v-center">
             <div id="jrampag3-embed"></div>
         </div>
-        <div class="divSquare two">
-            <div id="beastgriff-embed"></div>
-        </div>
-        <div class="divSquare">
-            <div id="unwritten-embed"></div>
-        </div>
-        <div class="divSquare">
-                <div id="getnacety-embed"></div>
-            </div>
     </div>
 </body>
 <script src="js/headroom.js" /></script>
@@ -36,26 +48,8 @@
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
     new Twitch.Embed("jrampag3-embed", {
-        width: 500,
-        height:  1000,
+        width: 1500,
+        height: 750,
         channel: "jrampag3",
-    });
-
-    new Twitch.Embed("beastgriff-embed", {
-        width:  500,
-        height:  1000,
-        channel: "iambeastgriff",
-    });
-
-    new Twitch.Embed("unwritten-embed", {
-        width: 500,
-        height:1000,
-        channel: "unwrittenk",
-    });
-
-    new Twitch.Embed("getnacety-embed", {
-        width: 500,
-        height:1000,
-        channel: "getnacety",
     });
 </script>

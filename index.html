@@ -13,47 +13,61 @@
 <body>
 
     <div class="well sidebar-nav sidebar-nav-fixed col-lg-2">
-        <div class="logo">
-            <img src="./img/jr3.png" width="300" height="3000" />
-        </div>
-        <ul>
-            <li>
-                <a class="home" href="#home">Home</a>
-            </li>
 
-            <li>
+        <center>
+            <div>
+                <img src="./img/jr3.png" class="" width="300" height="300" />
+            </div>
+            <div>
+                <button class="menu-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+            </div>
+        </center>
+        <div class="collapse navbar-collapse" id="myNavbar"></div>
+        <ul class="menu-ul">
+            <!-- <li>
                 <a class="about" href="#about">About me</a>
-            </li>
+            </li> -->
             <li>
                 <a class="about" href="https://strexm.tv/user/jrampag3" target="_blank">Donations</a>
             </li>
+            <li class="description">Tip me</li>
             <li>
-                <a class="about" href="#" target="_blank">Schedule</a>
+                <a class="about" href="https://www.twitch.tv/jrampag3" target="_blank">Twitch Page</a>
             </li>
+            <li class="description">Watch me</li>
+            <li>
+                <a class="about" href="https://twitter.com/j_rampag3" target="_blank">Twitter</a>
+            </li>
+            <li class="description">Follow me</li>
+            <li>
+                <a class="about" href="#">Schedule</a>
+            </li>
+            <li class="description">Coming Soon</li>
+            <li>
+                <a class="about" href="#">About me</a>
+            </li>
+            <li class="description">Coming Soon</li>
+            <!-- <li>
+                <a class="about" href="#" target="_blank">Schedule</a>
+            </li> -->
         </ul>
-        <div class="social">
-            <a href="#">
-                <img src="img/facebook.png" alt="">
-            </a>
-            <a href="#">
-                <img src="img/twitter.png" alt="">
-            </a>
-        </div>
     </div>
     <div class="body col-lg-11">
         <div id="jrampag3-embed"></div>
     </div>
 </body>
 <script src="js/headroom.js" /></script>
-<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
     new Twitch.Embed("jrampag3-embed", {
         width: '100%',
         height: 500,
         channel: "jrampag3",
+    });
+
+    $(".menu-button").click(function() {
+        $('.menu-ul').toggleClass('show');
     });
 </script>
